@@ -131,8 +131,7 @@ public class CheckoutDotCom3ds {
             paymentDeclined();
         }
         /* Check whether the payment is Authorized */
-        else return getPaymentResponse.isApproved();
-        return false;
+        return getPaymentResponse.isApproved();
     }
     
     private void paymentDeclined() {
